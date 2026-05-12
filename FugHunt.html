@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=TASA+Explorer:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+	
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+	
+<link rel="stylesheet" href="./GFXMachinaWebsite.css">
+	
+<!-- Text Fade Javascript -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+</script>
+	
+<script>
+
+$(window).on("load",function() {
+  function fade(pageLoad) {
+    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+    var min = 0.1;
+    var max = 1;
+    var threshold = 0.01;
+    
+    $(".logos").each(function() {
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      if (objectBottom < windowBottom) { 
+        if ($(".text").css("opacity")<=min+threshold || pageLoad) {$(".text").fadeTo(200,max);}
+      } else {
+        if ($(".text").css("opacity")>=max-threshold || pageLoad) {$(".text").fadeTo(200,min);}
+      }
+    });
+  } fade(true);
+  $(window).scroll(function(){fade(false);});
+});
+	
+</script>
+
+</head>
+	
+<style>
+
+/* Main Page Stuff */
+	
+body {
+	margin: 0;
+	padding: 3vh 0 0 0;
+	}
+	
+.bigbox {
+	width: 100vw;
+  	height: 100vh;
+  	display: block;
+ 	justify-content: center;
+ 	align-items: center;
+	font-size: min(0.8vw, 1.2vh);
+	}
+
+@media only screen and (max-width: 880px) {
+	div.bigbox {
+		font-size: min(0.8vw, 0.92vh);
+    	}
+	}
+	
+
+	
+</style>
+	
+	
+<body>
+
+
+<!-- Gallery -->	
+	
+<div class="bigbox" align="center">
+  <div class="gallery" align="center">
+	  <div class="back-button"><a href="index.html">&times;</a></div>
+	 
+	  <div class="swiper-next-button">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+	  <path d="M13 18l6-6"/><path d="M13 6l6 6"/>
+	  </svg>
+	  </div>
+      
+	  <div class="swiper-prev-button">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+  	  <path d="M5 12l6 6"/><path d="M5 12l6 -6"/>
+	  </svg>
+	  </div>
+	
+ 	<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+       	  <img src="Images/FugHunt/01.webp" fetchpriority="high"/>
+     	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/02.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/FugHunt/03.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/FugHunt/04.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/05.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/06.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/07.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/08.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/09.webp" />
+      	  </div>
+       </div>
+    </div>
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+       	  <img src="Images/FugHunt/Thumb01.webp" fetchpriority="high"/>
+     	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/Thumb02.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/FugHunt/Thumb03.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/FugHunt/Thumb04.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/Thumb05.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/Thumb06.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/Thumb07.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/Thumb08.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/FugHunt/Thumb09.webp" fetchpriority="high"/>
+      	  </div>
+    </div>
+  </div>
+
+		
+<!-- Text -->		
+<div class="spacer" style="height:40px;"></div>
+	 
+<div class="textbox">
+		<div class="text" id="info">
+			<p class="logos">
+			<img id="logo" src="Images/FugHunt/Logo.webp" width="80%" style="margin-bottom: 15px">
+			<br>
+			<text id="prodcos">
+				DOUBLEACT&nbsp;&nbsp;&amp;&nbsp; A+E
+			</text>
+			</p>
+			
+			<p id="infoFinal">All 12 episodes</p>
+		</div>
+	
+		<div class="text" id="spiel">
+			<p>Follow an elite Mexican police unit as they track down and capture American fugitives hiding in Mexico, ensuring they face justice in the US.</p>
+
+			<p>We did the GFX for the full 12 episode series: supporting the nail biting cat-and-mouse chases with dramatic satellite maps, text message exchanges, and tactile wanted cards.</p>
+
+			<p id="spielFinal">Originally running on A+E Network, the show can be tracked down on Amazon Prime Video, Apple TV, Disney Plus and YouTube premium.</p>
+			</div>
+</div>
+	 <!-- Bottom Spacer -->
+			
+<div class="spacer"></div>
+
+</div>	
+</div>
+
+ <!-- Swiper Javascript -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+ <script> 
+	  var swiper = new Swiper(".mySwiper", {
+	  loop: true,
+      spaceBetween: 0,
+      freeMode: true,
+      watchSlidesProgress: true,
+	  slidesPerView: 4,
+	  slidesPerGroup:4,
+	  grid: {
+		  fill: 'row',
+		  rows: 3,
+		  },
+	  breakpoints: {
+		  880: {
+			  slidesPerView: 6,
+			  slidesPerGroup:6,
+	  		  grid: {
+		  	  fill: 'row',
+		  	  rows: 2,
+		  	  },
+		  }
+	  }
+    });
+	  
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 1,
+      navigation: {
+        nextEl: ".swiper-next-button",
+        prevEl: ".swiper-prev-button",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+	 
+	function goBack() {
+		href="index.html"
+	}
+
+</script>
+
+	
+</body>
+</html>

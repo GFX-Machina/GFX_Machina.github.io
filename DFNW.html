@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=TASA+Explorer:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+	
+<link rel="stylesheet" href="./GFXMachinaWebsite.css">
+	
+<!-- Text Fade Javascript -->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+</script>
+	
+<script>
+
+$(window).on("load",function() {
+  function fade(pageLoad) {
+    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
+    var min = 0.1;
+    var max = 1;
+    var threshold = 0.01;
+    
+    $(".logos").each(function() {
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      if (objectBottom < windowBottom) { 
+        if ($(".text").css("opacity")<=min+threshold || pageLoad) {$(".text").fadeTo(200,max);}
+      } else {
+        if ($(".text").css("opacity")>=max-threshold || pageLoad) {$(".text").fadeTo(200,min);}
+      }
+    });
+  } fade(true);
+  $(window).scroll(function(){fade(false);});
+});
+	
+</script>
+	
+</head>
+	
+<style>
+
+/* Main Page Stuff */
+	
+body {
+	margin: 0;
+	padding: 3vh 0 0 0;
+	}
+	
+.bigbox {
+	width: 100vw;
+  	height: 100vh;
+  	display: block;
+ 	justify-content: center;
+ 	align-items: center;
+	font-size: min(0.8vw, 1.2vh);
+	}
+	
+
+@media only screen and (max-width: 880px) {
+	div.bigbox {
+		font-size: min(0.8vw, 0.92vh);
+    	}
+	}
+	
+</style>
+	
+	
+<body>
+
+
+<!-- Gallery -->	
+	
+<div class="bigbox" align="center">
+  <div class="gallery" align="center">
+	  <div class="back-button"><a href="index.html">&times;</a></div>
+	 
+	  <div class="swiper-next-button">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+	  <path d="M13 18l6-6"/><path d="M13 6l6 6"/>
+	  </svg>
+	  </div>
+      
+	  <div class="swiper-prev-button">
+	  <svg xmlns="http://www.w3.org/2000/svg" width="10em" height="10em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+  	  <path d="M5 12l6 6"/><path d="M5 12l6 -6"/>
+	  </svg>
+	  </div>
+	
+ 	<div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+       	  <img src="Images/DFNW/01.webp" fetchpriority="high"/>
+     	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/02.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/DFNW/03.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/DFNW/04.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/05.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/06.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/DFNW/07.webp" />
+          </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/08.webp" />
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/09.webp" />
+      	  </div>
+	   	<div class="swiper-slide">
+          <img src="Images/DFNW/10.webp" />
+          </div>
+		<div class="swiper-slide">
+          <img src="Images/DFNW/11.webp" />
+          </div>
+    </div>
+  </div>
+  <div thumbsSlider="" class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+       	  <img src="Images/DFNW/Thumb01.webp" fetchpriority="high"/>
+     	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/Thumb02.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/DFNW/Thumb03.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/DFNW/Thumb04.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/Thumb05.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/Thumb06.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+       	  <img src="Images/DFNW/Thumb07.webp" fetchpriority="high"/>
+          </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/Thumb08.webp" fetchpriority="high"/>
+      	  </div>
+      	<div class="swiper-slide">
+          <img src="Images/DFNW/Thumb09.webp" fetchpriority="high"/>
+      	  </div>
+	   	<div class="swiper-slide">
+          <img src="Images/DFNW/Thumb10.webp" fetchpriority="high"/>
+          </div>
+		<div class="swiper-slide">
+          <img src="Images/DFNW/Thumb11.webp" fetchpriority="high"/>
+          </div>
+    </div>
+  </div>
+
+		
+<!-- Text -->		
+<div class="spacer" style="height:40px;"></div>	
+	  
+<div class="textbox">
+		<div class="text" id="info">
+			<p class="logos">
+			<img id="logo" src="Images/DFNW/Logo.webp" width="80%" style="margin-bottom: 20px">
+			<br>
+			<text id="prodcos">				 
+				TIGER&nbsp;ASPECT&nbsp;&nbsp;&amp;&nbsp; ITV
+			</text>
+			</p>
+			
+			<p id="infoFinal">Most of all 6 episodes
+			</p>
+		</div>
+	
+		<div class="text" id="spiel">
+			<p>The ITV impression show that weirded-out viewers, pissed-off celebrities, and may have reached the other side of the uncanny valley!</p>
+			
+			<p>The deep-fakes were done by the sorcerers at Studio Neural - while we did a big chunk of the "shallow-fakes" (cut-away photoshopped images and screen replacements).</p>
+			
+			<p id="spielFinal">Watch the full series on ITV X</p>
+			</div>
+</div>
+	 <!-- Bottom Spacer -->
+			
+<div class="spacer"></div>	 
+
+</div>	
+</div>
+
+ <!-- Swiper Javascript -->
+ 
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+ <script> 
+	  var swiper = new Swiper(".mySwiper", {
+	  loop: true,
+      spaceBetween: 0,
+      freeMode: true,
+      watchSlidesProgress: true,
+	  slidesPerView: 4,
+	  slidesPerGroup:4,
+	  grid: {
+		  fill: 'row',
+		  rows: 3,
+		  },
+	  breakpoints: {
+		  880: {
+			  slidesPerView: 6,
+			  slidesPerGroup:6,
+	  		  grid: {
+		  	  fill: 'row',
+		  	  rows: 2,
+		  	  },
+		  }
+	  }
+    });
+	  
+    var swiper2 = new Swiper(".mySwiper2", {
+      loop: true,
+      spaceBetween: 1,
+      navigation: {
+        nextEl: ".swiper-next-button",
+        prevEl: ".swiper-prev-button",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+	 
+	function goBack() {
+		href="index.html"
+	}
+
+</script>
+
+
+</body>
+</html>

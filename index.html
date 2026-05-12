@@ -1,13 +1,235 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	
+<link rel="stylesheet" href="./GFXMachinaWebsite.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Saira:ital,wght@0,100..900;1,100..900&family=TASA+Explorer:wght@400..800&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">	
+	
 </head>
+	
+<style>
+
+/* Main Page Stuff */
+	
+body {
+	margin: 0;
+	padding: 3vh 0 0 0;
+	}
+
+	
+.bigbox {
+	width: 100vw;
+  	height: 100vh;
+  	display: block;
+ 	justify-content: center;
+ 	align-items: center;
+	font-size: min(0.8vw, 1.2vh);
+	}
+
+
+	
+/* "Showreel" */
+	
+.videoWrapper {
+	width: 100em;
+  	height: 56.25em;
+	position: relative;
+	}
+
+.videoWrapper video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    }
+
+	
+	
+/* "Projects" */
+	
+div.projects {
+	padding-top:calc(19px + 1vh);
+	}
+
+div.project-gallery {
+  	margin: 10px 0 40px 0;
+	display: flex;
+  	flex-wrap: wrap;
+  	justify-content:flex-start;
+	}
+
+div.project-gallery-item {
+  	margin: 0px;
+  	width: 50%;
+	height: 0;
+	padding-bottom:28.125%;
+  	opacity: 1;
+	}
+
+div.project-gallery-item img {
+  	width: 100%;
+  	height: auto;
+	}
+	
+div.project-gallery-item img:hover {
+	opacity: 0.6;
+	}
+
+
+@media only screen and (max-width: 880px) {
+  	div.project-gallery-item {
+    	width: calc(100%);
+		padding-bottom:56.25%;
+  		}
+	}	
+		
+	
+
+/* "About Us" & "Contact Us" */
+	
+.usStuff {
+	display:flex;
+	}
+	
+.usBox {
+	width:100%;
+	}
+		
+#about {
+	border-right: 1px solid rgba(255,255,255,.25);
+	}
+
+.usBox P {
+	padding: 0 30px 10px 30px;
+	margin-bottom:-0.75em;
+	}
+
+#contact img {
+	opacity: 0.9;
+	}
+
+#contact img:hover {
+	opacity: 0.6;
+	}
+	
+	
+@media only screen and (max-width: 880px){
+	div.usStuff {
+		display:block;
+  		}
+
+		div .usBox P {
+		padding: 0 0 10px 0;
+		margin-bottom:20px;
+		}
+
+	
+		#about {
+		margin:0 0 3% 0;
+		border-bottom: 1px solid rgba(255,255,255,.25);
+		border-right:0;
+		}
+		
+		#contact {
+		margin: 30px 0 0 0;
+		}
+	}
+	
+	
+</style>
+	
+	
 <body>
-    <h1>Does this work?</h1>
-    <p>I BLOODY WELL HOPE SO!</p>
-    <p>I BLOODY WELL HOPE SO!</p>
-    <p>I BLOODY WELL HOPE SO!</p>
+
+<!-- Showreel -->	
+	
+<div class="bigbox" align="center">
+	<div class="showreel" align="center">
+    	<div class="videoWrapper">
+		<video src="https://www.dropbox.com/scl/fi/p48hsrjxhdbaw58zvs5q4/Showreel-V2.mp4?rlkey=wpldcpbkpyeov56vfv8crboss&st=g8oxmeez&raw=1" id="myVideo" frameborder="0" controls playsinline poster="Images/GFXMachina_Logo.webp">
+		</video>
+		
+<!-- "Projects" Gallery -->
+			
+<div class="projects"><h2>PROJECTS</h2></div>
+
+<div class="project-gallery">
+
+	<div class="project-gallery-item">
+  	<a href="SpittingImage.html"><img src="Images/Spitting Image/Project.webp" width="960px" height="540px" fetchpriority="high"></a>
+	</div>
+	
+	<div class="project-gallery-item">
+  	<a href="FugHunt.html"><img src="Images/FugHunt/Project.webp" width="960px" height="540px" fetchpriority="high"></a>
+	</div>
+
+	<div class="project-gallery-item">
+    <a href="Penthouse.html"><img src="Images/Penthouse/Project.webp" width="960px" height="540px" fetchpriority="high"></a>
+	</div>
+	
+	<div class="project-gallery-item">
+    <a href="DFNW.html"><img src="Images/DFNW/Project.webp" width="960px" height="540px" fetchpriority="high"></a>
+	</div>
+	
+	<div class="project-gallery-item">
+	<a href="ISISSmartphone.html"><img src="Images/ISIS Smartphone/Project.webp" width="960px" height="540px" fetchpriority="high"></a>
+	</div>
+	
+	<div class="project-gallery-item">
+	<a href="CompDep.html"><img src="Images/CompDep/Project.webp" width="960px" height="540px" fetchpriority="high"></a>
+	</div>
+
+</div>
+
+
+<!-- "About Us" & "Contact Us" -->  
+			
+<div class="usStuff">
+	
+	<div class="usBox" id="about">
+	<h2>ABOUT US</h2>
+		<p align=left>We’re Claire & Leander: a stay-at-home motion graphics duo based in London.
+
+		<br><br>
+	
+		Smaller than a studio, in both personnel AND cost: we’re efficient, effective, and pretty effing good to boot!
+
+		<br><br>
+			
+		Storytellers on the side (Claire - Animation Director and NFTS Graduate, Leander - Screenwriter and educational delinquent), we're always thinking of how our graphic work can support and elevate the larger narrative of the project.
+			
+		<br><br>
+
+		We’ve worked with the likes of Double Act, Curious Films, Tiger Aspect and Avalon.
+		
+		<br>
+		
+		So if you have a project that might be us shaped, get in touch!
+	</div>
+	
+	
+	<div class="usBox" id="contact">
+		<h2>CONTACT</h2>	
+		<p align="center">
+			<a id="mailto" href="mailto:gfxmachina@gmail.com" target="new"><img src="Images/Mail.webp" style="margin-right:min(50px,15%);width:min(80px,35%);"></a>
+			<a id="linkedin" href="https://www.linkedin.com/company/gfxmachina" target="new"><img src="Images/LinkedIn.webp" style="width:min(80px,35%);"></a></p>
+			</div>
+
+	</div>
+
+		
+			
+<!-- Bottom Spacer -->
+			
+<div class="spacer"></div>
+
+</div>
+</div>
+</div>
+
 </body>
 </html>
