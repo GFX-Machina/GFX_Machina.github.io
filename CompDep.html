@@ -11,35 +11,6 @@
 	
 <link rel="stylesheet" href="./GFXMachinaWebsite.css">
 	
-<!-- Text Fade Javascript -->
-	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
-</script>
-	
-<script>
-
-$(window).on("load",function() {
-  function fade(pageLoad) {
-    var windowBottom = $(window).scrollTop() + $(window).innerHeight();
-    var min = 0.1;
-    var max = 1;
-    var threshold = 0.01;
-    
-    $(".logos").each(function() {
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      if (objectBottom < windowBottom) { 
-        if ($(".text").css("opacity")<=min+threshold || pageLoad) {$(".text").fadeTo(200,max);}
-      } else {
-        if ($(".text").css("opacity")>=max-threshold || pageLoad) {$(".text").fadeTo(200,min);}
-      }
-    });
-  } fade(true);
-  $(window).scroll(function(){fade(false);});
-});
-	
-</script>
-	
 </head>
 	
 <style>
